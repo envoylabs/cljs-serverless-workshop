@@ -1,0 +1,20 @@
+{
+  "name": "cljs-serverless-workshop",
+  "version": "0.1.0",
+  "private": "true",
+  "engines": {
+    "node": "6.x"
+  },
+  "main": "server.js",
+  "dependencies": {},
+  "devDependencies": {
+    "serverless-offline": "^4.10.3",
+    "source-map-support": "^0.4.15",
+    "ws": "^7.0.0",
+    "concurrently": "^3.5.1"
+  },
+  "scripts": {
+      "offline": "concurrently --names \"LEIN,HTTP\" -c \"bgBlue.bold,bgRed.bold\" --kill-others-on-fail \"lein cljsbuild auto\" \"sls offline start\"",
+      "node-watcher": "node target/js/compiled/cljs_serverless_workshop.js"
+  }
+}

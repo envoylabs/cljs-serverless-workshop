@@ -1,0 +1,14 @@
+# package directories
+node_modules
+jspm_packages
+
+# Serverless directories
+.serverless
+
+# All our clojure fun
+figwheel_server.log
+.lein-repl-history
+.nrepl-port
+
+# Builds and such
+target
