@@ -9,7 +9,8 @@
   :min-lein-version "2.8.0"
 
   :dependencies [[org.clojure/clojure "1.9.0"]
-                 [org.clojure/clojurescript "1.9.908"]]
+                 [org.clojure/clojurescript "1.9.908"]
+                 [funcool/httpurr "1.1.0"]]
 
   :plugins [[lein-cljsbuild "1.1.7" :exclusions [[org.clojure/clojure]]]
             [lein-figwheel "0.5.18"]]
