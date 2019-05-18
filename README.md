@@ -14,6 +14,40 @@ Note: initial template generated using
 
 You can delete, edit or create a new one if you know what you're doing.    
 
+## Quickstart
+
+Are you an EMACS user? Great, I got you.
+
+```bash
+npm install serverless -g
+npm install
+npm run offline
+```
+
+Open `core.cljs` in emacs, make a change and save the file.
+
+In a new terminal tab:
+
+```bash
+npm run node-watcher
+```
+
+In a new terminal tab:
+
+```bash
+lein repl
+```
+
+In emacs:
+
+    M-x cider-connect
+
+In the REPL:
+
+    user> (go!)
+
+Boom! You've now got figwheel, auto prod builds and serverless offline ready for cURL-ing.
+
 ### REPL usage
 
 These are the auto-generated docs for using the REPL.
