@@ -10,7 +10,10 @@
 
   :dependencies [[org.clojure/clojure "1.9.0"]
                  [org.clojure/clojurescript "1.9.908"]
-                 [funcool/httpurr "1.1.0"]]
+                 [funcool/httpurr "1.1.0"]
+                 [funcool/promesa "2.0.1"]
+                 [io.nervous/cljs-lambda "0.3.5"]
+                 [testdouble/clojurescript.csv "0.3.0"]]
 
   :plugins [[lein-cljsbuild "1.1.7" :exclusions [[org.clojure/clojure]]]
             [lein-figwheel "0.5.18"]]
